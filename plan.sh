@@ -14,7 +14,7 @@ pkg_origin=rx007
 
 # Required.
 # Sets the version of the package.
-pkg_version=1.0.0
+pkg_version=1.0.1
 
 # Required.
 # A URL that specifies where to download the source from. Any valid wget url
@@ -60,7 +60,9 @@ pkg_license=('Apache-2.0')
 # An array of package dependencies needed at runtime. You can refer to packages
 # at three levels of specificity: `origin/package`, `origin/package/version`, or
 # `origin/package/version/release`.
-# pkg_deps=(core/glibc)
+pkg_deps=(
+  core/nginx
+)
 
 do_download() {
   return 0
